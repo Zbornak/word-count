@@ -30,7 +30,7 @@ func TestCountBytes(t *testing.T) {
 	exp := 24
 	res := count(b, false, false, true)
 
-	if res != exp {
+	if res != int(exp) {
 		t.Errorf("Expected %d, got %d instead.\n", exp, res)
 	}
 }
